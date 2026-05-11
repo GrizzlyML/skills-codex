@@ -81,7 +81,7 @@ The skills are **project-agnostic**. They don't know your tech stack, your folde
 - **Deep modules** — small interfaces hiding significant complexity. Inspired by John Ousterhout's *A Philosophy of Software Design*.
 - **Domain language everywhere** — code, tests, issues, and conversations use the same vocabulary defined in your glossary.
 
-## Background
+## Background (from Youtuber and original author of this skill REPO @mostlyhak)
 
 These skills grew out of a practical need: after a year of building a product almost entirely with AI, the codebase grew faster than the understanding of it. Working code with no map.
 
