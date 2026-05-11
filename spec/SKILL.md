@@ -1,8 +1,8 @@
 ---
 name: spec
-description: Interview the user to produce a feature spec (PRD), grounded in the project's domain model, context map, and ubiquitous language. Outputs a structured spec document. Use when starting a new feature, enhancement, or significant change.
-user-invocable: true
-argument-hint: "[feature or problem to specify]"
+description: "Use when starting a new feature, enhancement, or significant change in Codex. Interviews the user, explores the codebase, reads domain docs, and produces a structured feature spec grounded in the project's context map and ubiquitous language."
+metadata:
+  short-description: Create domain-grounded feature specs
 ---
 
 # Feature Spec
@@ -18,7 +18,8 @@ Read existing domain documentation:
 1. `docs/CONTEXT_MAP.md` — which contexts exist and how they relate
 2. `docs/UBIQUITOUS_LANGUAGE.md` — canonical terminology
 3. `docs/contexts/*/CONTEXT.md` — ownership, invariants, contracts for relevant contexts
-4. `CLAUDE.md` — project-level context
+4. `AGENTS.md` — Codex project instructions
+5. `CLAUDE.md` — legacy project-level context, if present
 
 ### 2. Understand the request
 
@@ -121,6 +122,6 @@ If the spec introduced new terms, refined existing ones, or made decisions that 
 
 ## Related skills
 
-- `/domain` — stress-test the spec against the domain model before implementation
-- `/slice` — break the spec into vertical slices for implementation
-- `/tdd` — implement each slice with tracer-bullet TDD
+- `$domain` — stress-test the spec against the domain model before implementation
+- `$slice` — break the spec into vertical slices for implementation
+- `$tdd` — implement each slice with tracer-bullet TDD

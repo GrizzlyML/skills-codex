@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain"
+  short_description: "Stress-test plans against domain rules"
+  default_prompt: "Use $domain to stress-test this plan against the project domain model."

@@ -1,13 +1,13 @@
 ---
 name: architect
-description: Surface architectural friction in the codebase and design better module interfaces. Uses parallel sub-agents to explore radically different interface designs. Based on "deep modules" philosophy — small interfaces hiding significant complexity. Use when code feels tangled, hard to test, or hard to navigate.
-user-invocable: true
-argument-hint: "[area to analyze, or leave blank to explore freely]"
+description: "Use in Codex when code feels tangled, hard to test, or hard to navigate. Surfaces architectural friction and designs better module interfaces using deep module principles: small public interfaces hiding significant complexity."
+metadata:
+  short-description: Improve architecture and module interfaces
 ---
 
 # Architecture Improvement
 
-Explore the codebase to surface architectural friction, then design deep module interfaces using parallel sub-agents. A **deep module** (Ousterhout) has a small interface hiding a large implementation — more testable, more navigable, more resilient to change.
+Explore the codebase to surface architectural friction, then design deep module interfaces. A **deep module** (Ousterhout) has a small interface hiding a large implementation — more testable, more navigable, more resilient to change.
 
 ## Process
 
@@ -61,14 +61,14 @@ Show this to the user, then proceed to design.
 
 ### 5. Design multiple interfaces
 
-Spawn 3+ sub-agents in parallel. Each must produce a **radically different** interface:
+In Codex, use sub-agents only when the user explicitly asks for delegated or parallel agent work. If they have not, design the alternatives locally. Produce 3+ **radically different** interfaces:
 
-- **Agent 1**: "Minimize the interface — 1-3 entry points max"
-- **Agent 2**: "Maximize flexibility — support many use cases and extension"
-- **Agent 3**: "Optimize for the most common caller — make the default case trivial"
-- **Agent 4** (if applicable): "Ports & adapters — inject all external dependencies"
+- **Minimal interface**: 1-3 entry points max
+- **Flexible interface**: support many use cases and extension
+- **Common-case interface**: make the default caller path trivial
+- **Ports-and-adapters interface** (if applicable): inject all external dependencies
 
-Each agent outputs:
+Each design outputs:
 
 1. Interface signature (types, methods, params)
 2. Usage example
@@ -111,7 +111,7 @@ Based on user's choice:
 
 ## Related skills
 
-- `/domain` — stress-test the chosen design against the domain model
-- `/spec` — formalize the improvement into a spec
-- `/slice` — break the refactor into vertical slices
-- `/holistic` — understand the broader system before refactoring
+- `$domain` — stress-test the chosen design against the domain model
+- `$spec` — formalize the improvement into a spec
+- `$slice` — break the refactor into vertical slices
+- `$holistic` — understand the broader system before refactoring

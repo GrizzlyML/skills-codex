@@ -1,8 +1,8 @@
 ---
 name: domain
-description: Cook a plan against the project's domain model. Stress-tests terminology, surfaces contradictions with code, and updates CONTEXT.md, UBIQUITOUS_LANGUAGE.md, and ADRs inline as decisions crystallize. Use when planning a feature, refactoring, or any work that touches domain boundaries.
-user-invocable: true
-argument-hint: "[plan or topic to stress-test]"
+description: "Use when planning a feature, refactoring, or any work that touches domain boundaries in Codex. Stress-tests terminology, checks the plan against code and domain docs, and updates CONTEXT.md, UBIQUITOUS_LANGUAGE.md, and ADRs as decisions crystallize."
+metadata:
+  short-description: Stress-test plans against the domain model
 ---
 
 # Domain Model Cooking Session
@@ -20,7 +20,8 @@ Before starting, find and read existing domain documentation. Check these locati
 1. `docs/CONTEXT_MAP.md` — if it exists, this is a multi-context project. Read it to understand bounded contexts and their relationships.
 2. `docs/UBIQUITOUS_LANGUAGE.md` — the shared glossary. Read it to understand canonical terms.
 3. `docs/contexts/*/CONTEXT.md` — per-context documentation. Read the ones relevant to the current plan.
-4. `CLAUDE.md` — project-level context.
+4. `AGENTS.md` — Codex project instructions.
+5. `CLAUDE.md` — legacy project-level context, if present.
 
 If none of these exist, that's fine — create them lazily as decisions are made (see below).
 
@@ -85,6 +86,6 @@ If documentation files don't exist yet, create them only when you have something
 
 ## Related skills
 
-- `/spec` — after cooking, formalize the plan into a spec
-- `/holistic` — zoom out to understand how this plan fits the bigger picture
-- `/architect` — surface architectural friction and design deep module interfaces
+- `$spec` — after cooking, formalize the plan into a spec
+- `$holistic` — zoom out to understand how this plan fits the bigger picture
+- `$architect` — surface architectural friction and design deep module interfaces

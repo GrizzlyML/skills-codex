@@ -1,29 +1,29 @@
 ---
 name: qa
-description: Interactive QA session where you describe bugs conversationally and the agent files durable GitHub issues using the project's domain language. Explores the codebase in the background for context. Use when reporting bugs, doing QA testing, or filing issues from observations.
-user-invocable: true
-argument-hint: "[describe the issue, or just start talking]"
+description: "Use in Codex for interactive QA, bug reporting, and issue drafting from observations. Clarifies symptoms, explores the codebase for domain context, and prepares durable GitHub issues in the project's domain language."
+metadata:
+  short-description: Turn QA observations into durable issues
 ---
 
 # QA Session
 
-Run an interactive QA session. Describe problems you're encountering. I'll clarify, explore the codebase for context, and file GitHub issues that are durable, user-focused, and use the project's domain language.
+Run an interactive QA session. Clarify the user's observations, explore the codebase for context, and prepare GitHub issues that are durable, user-focused, and use the project's domain language.
 
 ## For each issue raised
 
 ### 1. Listen and lightly clarify
 
-Let you describe the problem in your own words. I'll ask **at most 2-3 short clarifying questions**:
+Let the user describe the problem in their own words. Ask **at most 2-3 short clarifying questions**:
 
 - What you expected vs what actually happened
 - Steps to reproduce (if not obvious)
 - Whether it's consistent or intermittent
 
-I won't over-interview. If the description is clear enough, I'll move on.
+Do not over-interview. If the description is clear enough, move on.
 
 ### 2. Explore the codebase in background
 
-While talking, I'll explore the relevant area to:
+While talking, explore the relevant area to:
 
 - Learn the domain language (check `docs/UBIQUITOUS_LANGUAGE.md`)
 - Understand what the feature is supposed to do
@@ -47,7 +47,7 @@ Before filing, decide: **single issue or breakdown?**
 
 ### 4. File the GitHub issue(s)
 
-Create with `gh issue create`. I'll file and share URLs without asking for review first.
+Create with the GitHub connector or `gh issue create` when available. Before creating externally visible issues, confirm with the user unless they explicitly asked you to file them.
 
 **All issues must be durable** — they should still make sense after major refactors.
 
@@ -109,7 +109,7 @@ Create with `gh issue create`. I'll file and share URLs without asking for revie
 - **Reproduction steps are mandatory**
 - **Keep it concise** — readable in 30 seconds
 
-After filing, I'll share all issue URLs and ask: "Next issue, or are we done?"
+After filing, share all issue URLs and ask: "Next issue, or are we done?"
 
 ### 5. Continue the session
 
@@ -117,6 +117,6 @@ Keep going until you're done. Each issue is independent.
 
 ## Related skills
 
-- `/holistic` — understand the broader context of a bug before filing
-- `/domain` — if a bug reveals a terminology or domain model issue
-- `/tdd` — implement the fix using tracer-bullet TDD
+- `$holistic` — understand the broader context of a bug before filing
+- `$domain` — if a bug reveals a terminology or domain model issue
+- `$tdd` — implement the fix using tracer-bullet TDD

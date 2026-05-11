@@ -1,8 +1,8 @@
 ---
 name: tdd
-description: Implement a feature or fix using pragmatic test-driven development. Tracer-bullet approach — one test, one implementation, repeat. Tests verify behavior through public interfaces, not implementation details. Use when implementing a slice from /slice or any work that needs tests.
-user-invocable: true
-argument-hint: "[slice description, issue number, or behavior to implement]"
+description: "Use in Codex when implementing a feature, fix, or vertical slice that needs tests. Applies pragmatic test-driven development: one behavior test, minimal implementation, repeat, with tests through public interfaces rather than implementation details."
+metadata:
+  short-description: Implement changes with pragmatic TDD
 ---
 
 # Pragmatic Test-Driven Development
@@ -129,6 +129,6 @@ If the implementation revealed new invariants, clarified contracts, or surfaced 
 
 ## Related skills
 
-- `/slice` — break work into slices before implementing with TDD
-- `/spec` — create the spec that defines what to build
-- `/domain` — stress-test the design against the domain model
+- `$slice` — break work into slices before implementing with TDD
+- `$spec` — create the spec that defines what to build
+- `$domain` — stress-test the design against the domain model

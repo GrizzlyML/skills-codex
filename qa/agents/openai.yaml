@@ -1,0 +1,4 @@
+interface:
+  display_name: "QA"
+  short_description: "Turn QA observations into issues"
+  default_prompt: "Use $qa to turn these QA observations into durable GitHub issue drafts."

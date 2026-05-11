@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architect"
+  short_description: "Improve architecture and interfaces"
+  default_prompt: "Use $architect to identify architectural friction and propose better module interfaces."

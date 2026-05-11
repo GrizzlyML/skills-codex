@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-SKILLS_DIR="$HOME/.claude/skills"
+SKILLS_DIR="${CODEX_HOME:-$HOME/.codex}/skills"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p "$SKILLS_DIR"
@@ -17,4 +17,4 @@ done
 
 echo ""
 echo "Installed $count skills to $SKILLS_DIR"
-echo "Use them in any project: /spec, /domain, /slice, /tdd, /holistic, /architect, /qa"
+echo "Restart Codex or open a new session, then use: \$spec, \$domain, \$slice, \$tdd, \$holistic, \$architect, \$qa"

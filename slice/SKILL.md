@@ -1,8 +1,8 @@
 ---
 name: slice
-description: Break a spec, plan, or feature into independently-implementable vertical slices (tracer bullets). Each slice cuts through all layers end-to-end. Outputs a task list or GitHub issues. Use after /spec to plan implementation order.
-user-invocable: true
-argument-hint: "[spec file path, GitHub issue number, or describe the feature]"
+description: "Use in Codex to break a spec, plan, or feature into independently implementable vertical slices. Each tracer-bullet slice cuts through the needed layers end-to-end and can be emitted as a task list or GitHub issues."
+metadata:
+  short-description: Break plans into vertical slices
 ---
 
 # Vertical Slicing
@@ -126,6 +126,6 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 
 ## Related skills
 
-- `/spec` — create the spec that this skill breaks down
-- `/tdd` — implement each slice with tracer-bullet TDD
-- `/domain` — stress-test the slices against the domain model
+- `$spec` — create the spec that this skill breaks down
+- `$tdd` — implement each slice with tracer-bullet TDD
+- `$domain` — stress-test the slices against the domain model

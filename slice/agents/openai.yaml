@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slice"
+  short_description: "Break plans into vertical slices"
+  default_prompt: "Use $slice to break this spec into independently verifiable vertical slices."

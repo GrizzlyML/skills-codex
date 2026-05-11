@@ -1,0 +1,4 @@
+interface:
+  display_name: "Holistic"
+  short_description: "Map system context and change impact"
+  default_prompt: "Use $holistic to explain how this area fits into the broader system."

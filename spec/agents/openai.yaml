@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec"
+  short_description: "Create domain-grounded feature specs"
+  default_prompt: "Use $spec to turn this feature idea into a concise, domain-grounded spec."

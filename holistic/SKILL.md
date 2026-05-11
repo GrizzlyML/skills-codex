@@ -1,8 +1,8 @@
 ---
 name: holistic
-description: Zoom out to see how code, features, or plans fit into the bigger picture. Maps bounded contexts, traces cross-cutting concerns, surfaces hidden dependencies, and identifies systemic risks. Use when you're lost in details, unfamiliar with an area, or need to understand the full impact of a change.
-user-invocable: true
-argument-hint: "[area, feature, or file to contextualize]"
+description: "Use in Codex to understand how code, features, bugs, or plans fit into the broader system. Maps bounded contexts, traces data flow and cross-cutting concerns, surfaces hidden dependencies, and identifies systemic risks."
+metadata:
+  short-description: Map system context and impact
 ---
 
 # Holistic View
@@ -18,7 +18,8 @@ Read existing domain documentation to ground the analysis:
 1. `docs/CONTEXT_MAP.md` — bounded contexts and relationships
 2. `docs/UBIQUITOUS_LANGUAGE.md` — canonical terminology
 3. `docs/contexts/*/CONTEXT.md` — per-context ownership and contracts
-4. `CLAUDE.md` — project-level context
+4. `AGENTS.md` — Codex project instructions
+5. `CLAUDE.md` — legacy project-level context, if present
 
 If these don't exist, explore the codebase organically to build the picture.
 
@@ -102,6 +103,6 @@ Keep it concise. The goal is orientation, not exhaustive documentation.
 
 ## Related skills
 
-- `/domain` — stress-test a plan against the domain model (deeper, interactive)
-- `/architect` — surface friction and design better interfaces (prescriptive)
-- `/spec` — after understanding the picture, formalize a plan
+- `$domain` — stress-test a plan against the domain model (deeper, interactive)
+- `$architect` — surface friction and design better interfaces (prescriptive)
+- `$spec` — after understanding the picture, formalize a plan
