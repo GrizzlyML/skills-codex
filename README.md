@@ -6,6 +6,12 @@ These skills encode a **Domain-Driven Design workflow for building with AI** —
 
 ## The Workflow
 
+Normal feature:
+$spec → $slice → $tdd
+
+Architecture/domain-sensitive feature:
+$spec → $domain → $slice → $tdd
+
 ```
 $spec  →  $domain  →  $slice  →  $tdd  →  update docs
  define    stress-test   break into   implement    keep the model
